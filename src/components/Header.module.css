@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #ff0000 1.18%, #ffaa00 100%);
+  color: #fff;
+  padding: 20px 37px 20px 20px;
+}
+
+.logo {
+  width: 31px;
+}
+
+.title {
+  margin-left: 7px;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -0.1em;
+}
+
+.project {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+}

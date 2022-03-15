@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7e5d9;
+  display: flex;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 550px;
+  background: #fff;
+  height: 100%;
+}
