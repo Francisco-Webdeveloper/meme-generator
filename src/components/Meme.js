@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Meme.module.css";
+import memesData from "../memesData";
 
 export default function Meme() {
   const [meme, setMeme] = React.useState({
@@ -7,6 +8,8 @@ export default function Meme() {
     bottomText: "",
     image: "http://i.imgflip.com/1bij.jpg",
   });
+
+  const [allMemes, setAllMemes] = React.useState(memesData);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -18,7 +21,15 @@ export default function Meme() {
     });
   }
 
-  console.log(meme);
+  function getImage() {
+    const memesArray = allMemes.data.memes;
+    const randomIndex = Math.floor(Math.random() * memesArray.length);
+    const randomURL = memesArray[randomIndex].url;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      image: randomURL,
+    }));
+  }
 
   return (
     <main>
@@ -37,7 +48,9 @@ export default function Meme() {
           name="bottomText"
           value={meme.bottomText}
         />
-        <button className={classes.memeButton}>Get a new meme image 🖼</button>
+        <button className={classes.memeButton} onClick={getImage}>
+          Get a new meme image 🖼
+        </button>
       </div>
       <div className={classes.memeContainer}>
         <img className={classes.memeImage} src={meme.image} alt="meme" />
