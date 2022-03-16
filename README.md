@@ -1,7 +1,7 @@
 # Meme Generator built with React
 
 ## Background & Objectives
-App that allows the user to generate a meme, by clicking a button that returns a random image and introducing the text to attach to the image. The goal is to work with basic features of React, such as useState and useEffect hooks, inputs or conditional rendering.
+App that allows the user to generate a meme, by clicking a button that returns a random image and introducing the text to attach to the image. The goal is to work with fundamental features of React, such as useState and useEffect hooks, inputs or conditional rendering.
 
 <img width="569" alt="Screenshot 2022-03-16 at 14 57 48" src="https://user-images.githubusercontent.com/67716187/158606509-14fce3bb-fc97-4aea-bc85-e3dd283e9406.png">
 
