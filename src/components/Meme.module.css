@@ -9,7 +9,7 @@ main {
 }
 
 .input {
-  width: 230px;
+  /* width: 230px; */
   height: 35px;
   border-radius: 5px;
   border: 1px solid #d5d4d8;
@@ -42,6 +42,7 @@ main {
 .topText,
 .bottomText {
   position: absolute;
+  width: 500px;
   left: 50%;
   transform: translateX(-50%);
   font-family: impact, sans-serif;

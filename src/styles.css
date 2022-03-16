@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width: 550px;
+  max-width: 750px;
   background: #fff;
   height: 100%;
 }
